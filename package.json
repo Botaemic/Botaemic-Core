@@ -1,0 +1,16 @@
+{
+  "name": "com.botaemic.core",
+  "version": "0.1.0",
+  "displayName": "Botaemic Core Utilities",
+  "description": "",
+  "unity": "2019.2",
+  "keywords": [
+    "botaemic",
+    "core"
+  ],
+  "author": {
+    "name": "Dennis Bot",
+    "email": "dbot@botaemic.com",
+    "url": "http://www.botaemic.com"
+  }
+}
