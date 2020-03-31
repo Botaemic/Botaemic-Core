@@ -14,6 +14,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - A constant acceleration script (Rigidbody Velocity).
 - A constant velocity script (Rigidbody Velocity).
 
+## [0.2.0] - 2020-03-31
+### Added
+- Vector3 extensions.
+- Vector2 extensions.
+- Transform extensions based on the Vector3 extensions.
+- GameObject extensions based on the Vector3 extensions.
+- SpriteRenederer extensions.
+- A simple prefab spawner script.
+- A simple DestroyOnCollision script.
+
+### Changed
+- AddConstantVelocity.cs - Changed default member variables values.
+- SetConstantVelocity.cs - Changed default member variables values.
+- Health.cs - commented unused members variables.
+- EnergyShield.cs  - commented unused members variables.
+
 
 
 

@@ -6,17 +6,13 @@ namespace Botaemic.Core
     public class Health : MonoBehaviour
     {
         [Tooltip("Maximum amount of health")]
-        [SerializeField]
-        private float maxHealth = 10f;
-        [Tooltip("Health ratio at which the critical health vignette starts appearing")]
-        [SerializeField]
-        private float criticalHealthRatio = 0.3f;
+        [SerializeField] private float maxHealth = 10f;
+        //[Tooltip("Health ratio at which the critical health vignette starts appearing")]
+        //[SerializeField] private float criticalHealthRatio = 0.3f;
 
         [Tooltip("Healthbar to display, can be empty")]
-        [SerializeField]
-        private Bar healthBar = null;
-        [SerializeField]
-        private float currentHealth = 0;
+        [SerializeField] private Bar healthBar = null;
+        [SerializeField] private float currentHealth = 0;
 
         public UnityAction onDie;
         public UnityAction<float, GameObject> onDamaged;

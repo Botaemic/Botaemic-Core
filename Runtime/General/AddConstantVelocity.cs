@@ -4,7 +4,7 @@ namespace Botaemic.Core
 {
     public class AddConstantVelocity : MonoBehaviour
     {
-        [SerializeField] private Vector3 _velocity;
+        [SerializeField] private Vector3 _velocity = Vector3.zero;
 
         private Rigidbody _rb;
 

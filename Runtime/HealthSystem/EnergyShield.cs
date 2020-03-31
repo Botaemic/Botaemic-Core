@@ -8,25 +8,20 @@ namespace Botaemic.Core
     public class EnergyShield : MonoBehaviour
     {
         [Tooltip("Maximum amount of health")]
-        [SerializeField]
-        private float maximumShieldPoints = 10f;
+        [SerializeField] private float maximumShieldPoints = 10f;
         [Tooltip("Recharge rate of energy shield")]
-        [SerializeField]
-        private float rechargeRate = 0f;
-        [Tooltip("Health ratio at which the critical health vignette starts appearing")]
-        [SerializeField]
-        private float criticalShieldRatio = 0.3f;
+        [SerializeField] private float rechargeRate = 0f;
+        //[Tooltip("Health ratio at which the critical health vignette starts appearing")]
+        //[SerializeField] private float criticalShieldRatio = 0.3f;
 
         [Tooltip("Healthbar to display, can be empty")]
-        [SerializeField]
-        private Bar shieldBar = null;
-        [SerializeField]
-        private float currentHealth = 0;
+        [SerializeField] private Bar shieldBar = null;
+        [SerializeField] private float currentHealth = 0;
 
         public UnityAction<float, GameObject> onDamaged;
 
         private Stat shield = null;
-        private bool isDead = false;
+        //private bool isDead = false;
 
         public float CurrentValue { get => shield.CurrentValue; }
 
