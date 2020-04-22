@@ -30,6 +30,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Health.cs - commented unused members variables.
 - EnergyShield.cs  - commented unused members variables.
 
+## [0.2.1] - 2020-04-22
+### Added
+- CameraShaderEffect.cs, gives an easy way to attach a camera shader to your project.
+- CRT scanline camera shader
+- Vignette camera shader
+### Removed
+- RotationTo() extensions
+- LocalRotation() extensions
 
 
 

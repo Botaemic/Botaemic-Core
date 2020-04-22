@@ -136,30 +136,5 @@ namespace Botaemic.Core.Extensions
             yield return null;
         }
 
-        public static Quaternion RotationTo(this Transform source, Transform destination)
-        {
-            Debug.LogWarning("ABSOLETE Function please remove");
-            Quaternion ret;
-
-            ret = Quaternion.LookRotation(source.DirectionTo(destination), source.transform.up);
-
-            return ret;
-        }
-
-        public static Vector3 LocalRotation(this Transform source)
-        {
-            Debug.LogWarning("ABSOLETE Function please remove" );
-            return source.rotation.eulerAngles;
-        }
-
-        public static Quaternion RotationTo(this Transform source, Vector3 destination)
-        {
-            Debug.LogWarning("ABSOLETE Function please remove");
-            Quaternion ret;
-
-            ret = Quaternion.LookRotation(source.DirectionTo(destination), source.transform.up);
-
-            return ret;
-        }
     }
 }

@@ -50,7 +50,7 @@
 
             fixed4 frag (v2f i) : SV_Target
             {
-                // distance from center of image, used to adjust blur
+                // distance from center of image
                 float2 uv = i.uv;
                 float d = length(uv - float2(0.5, 0.5));
 
@@ -64,8 +64,6 @@
                 float scanline = sin(uv.y * _AmountOfScanlines) * _ScanlineOpacity;
                 col -= scanline;
 
-                // vignette
-                //col *= 1.0 - d * 0.5;
 
                 return float4(col, 1.0);
             }
