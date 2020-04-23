@@ -39,7 +39,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - RotationTo() extensions
 - LocalRotation() extensions
 
+## [0.2.2] - 2020-04-23
+### Added
+- SceneLoader.cs - easy way to load scenes additive with progression values
 
+### Changed
+- CameraShaderEffect.cs - code clean-up
 
 
 

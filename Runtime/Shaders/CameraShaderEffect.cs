@@ -7,8 +7,7 @@ namespace Botaemic.Core
     [ExecuteInEditMode]
     public class CameraShaderEffect : MonoBehaviour
     {
-       [SerializeField] private Material _material;
-
+       [SerializeField] private Material _material = null;
 
         #region Unity Functions
         void OnRenderImage(RenderTexture source, RenderTexture destination)
@@ -16,8 +15,6 @@ namespace Botaemic.Core
             Graphics.Blit(source, destination, _material);
         }
         #endregion
-
-
 
         #region Logging
         private void Log(string text)
