@@ -1,9 +1,9 @@
 {
   "name": "com.botaemic.core",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "displayName": "Botaemic Core Utilities",
   "description": "",
-  "unity": "2019.2",
+  "unity": "2019.3",
   "keywords": [
     "botaemic",
     "core"

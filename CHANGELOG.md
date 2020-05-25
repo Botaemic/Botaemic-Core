@@ -46,7 +46,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - CameraShaderEffect.cs - code clean-up
 
+## [0.2.3] - 2020-05-25
+### Added
+- CheckIfComponentIsSet<T>() - easy way check if component on script is set or NULL, returns false when NULL.
 
+### Changed
+- DebugUtility.cs - code clean-up
 
 
 

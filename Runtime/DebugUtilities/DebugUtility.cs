@@ -21,12 +21,49 @@ namespace Botaemic.Core
 #endif
         }
 
+        public static bool CheckIfComponentIsSet<T>(T source)
+        {
+            if (source == null)
+            {
+#if UNITY_EDITOR
+                Debug.LogError(typeof(T) + " component NOT SET OR IS NULL");
+#endif
+                return false;
+            }
+            return true;
+        }
+
+
+        public static bool CheckIfComponentIsSet<T>(T component, GameObject source)
+        {
+            if (component == null)
+            {
+#if UNITY_EDITOR
+                Debug.LogError(typeof(T) + " component NOT SET OR IS NULL on GameObject " + source.name);
+#endif
+                return false;
+            }
+            return true;
+        }
+
+
+
         public static void Log<T>(Component component)
         {
 #if UNITY_EDITOR
             if (component == null)
             {
                 Debug.LogError(typeof(T) + " component NOT SET OR IS NULL");
+            }
+#endif
+        }
+
+        public static void Log<T>(Component component, Component neededIn)
+        {
+#if UNITY_EDITOR
+            if (component == null)
+            {
+                Debug.LogError(neededIn.name +" GameObject: " +typeof(T) + " component NOT SET OR IS NULL");
             }
 #endif
         }
