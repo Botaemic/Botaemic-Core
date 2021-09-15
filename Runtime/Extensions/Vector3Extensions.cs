@@ -25,7 +25,6 @@ namespace Botaemic.Core.Extensions
         /// <returns></returns>
         public static Vector3 DirectionTo(this Vector3 source, Vector3 destination)
         {
-            Debug.LogWarning("Change function call DirectionTo");
             return (destination - source);
         }
 

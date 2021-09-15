@@ -36,7 +36,7 @@ namespace Botaemic.Core
         public void TakeDamage(float amount)
         {
             health.RemovePoints(amount);
-            if (health.CurrentValue <= 0f)
+            if (health.CurrentValue <= Mathf.Epsilon)
             {
                 Kill();
             }
@@ -51,16 +51,12 @@ namespace Botaemic.Core
 
         private void HandleDeath()
         {
-            if (isDead)
-                return;
+            if (isDead) { return; }
 
             if (currentHealth <= 0f)
             {
-                if (onDie != null)
-                {
-                    isDead = true;
-                    onDie.Invoke();
-                }
+                isDead = true;
+                onDie?.Invoke();
             }
         }
     }

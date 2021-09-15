@@ -75,5 +75,19 @@ namespace Botaemic.Core
  #endif
         }
 
+        public static void LogWarning(string comment)
+        {
+#if UNITY_EDITOR
+            Debug.LogWarning(comment);
+#endif
+        }
+
+        public static void LogError(string comment)
+        {
+#if UNITY_EDITOR
+            Debug.LogError(comment);
+#endif
+        }
+
     }
 }
